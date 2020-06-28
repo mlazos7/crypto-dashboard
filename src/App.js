@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.jsx"
 import BoxCrypto from "./components/BoxCrypto.jsx"
 import TopGainer from "./components/TopGainer.jsx"
 import { useDispatch, useSelector } from 'react-redux';
-import { getGlobalData } from './redux/reducers'
+import { getGlobalData } from './redux/actions'
 import { useEffect } from 'react'
 
 
