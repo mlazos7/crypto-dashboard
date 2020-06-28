@@ -12,7 +12,7 @@ function App() {
 
   const dispatch = useDispatch()
   const totalMarketCap = useSelector(state => state.crypto.totalMarketCap)
-  const top4 = useSelector(state => state.crypto.top4)
+  const coins = useSelector(state => state.crypto.coins)
 
 
   useEffect(() => {
@@ -28,29 +28,33 @@ function App() {
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper-top">
           {
-            top4.map((item) =>
+            coins.slice(0, 4).map((item) =>
               <BoxCrypto
                 key={item.id}
                 name={item.name}
                 image={item.image}
                 current_price={item.current_price}
-                price_change_24h={item.price_change_24h} />
+                price_change_percentage_24h={item.price_change_percentage_24h} />
             )
           }
 
         </div>
         <div className="sub-title">
-          <h1>Top Gainers</h1>
+          <h1>24h Change</h1>
         </div>
         <div className="wrapper-gainer">
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
-          <TopGainer />
+          {
+            coins.sort((a, b) =>
+              b.price_change_percentage_24h - a.price_change_percentage_24h
+            ).slice(0, 8).map((item) =>
+              <TopGainer
+                key={item.id}
+                name={item.name}
+                image={item.image}
+                current_price={item.current_price}
+                price_change_percentage_24h={item.price_change_percentage_24h} />
+            )
+          }
         </div>
       </div>
     </div>

@@ -1,19 +1,18 @@
 import React from 'react'
-import Icon from './../assets/btc.png'
 import UpDown from './../assets/up-down.png'
 
-const TopGainer = () => {
+const TopGainer = (props) => {
     return (
         <div className="box-gainer">
             <div className="box-gainer-header">
-                <p>Bitcoin</p>
-                <h1>$10,379</h1>
+                <p>{props.name}</p>
+                <h1>{props.current_price}</h1>
             </div>
             <div className="box-gainer-content">
-                <img src={Icon} alt="" />
+                <img className="box-gainer-content-img" src={props.image} alt="" />
                 <div>
                     <img src={UpDown} alt="" />
-                    <p>12%</p>
+                    <p>{props.price_change_percentage_24h}</p>
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
-import { GET_MARKET_CAP, GET_TOP4_BY_MARKET_CAP } from './actions'
+import { GET_MARKET_CAP, GET_COINS_BY_MARKET_CAP } from './actions'
 
 const initialState = {
   darkTheme: false,
   totalMarketCap: 0,
-  top4: [],
+  coins: [],
 }
 
 // reducer
@@ -11,8 +11,8 @@ export function appReducer(state = initialState, action) {
   switch (action.type) {
     case GET_MARKET_CAP:
       return { ...state, totalMarketCap: formatter.format(action.payload) }
-    case GET_TOP4_BY_MARKET_CAP:
-      return { ...state, top4: action.payload }
+    case GET_COINS_BY_MARKET_CAP:
+      return { ...state, coins: action.payload }
     default:
       return state
   }
