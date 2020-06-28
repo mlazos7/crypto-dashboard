@@ -1,21 +1,20 @@
 import React from 'react'
-import Icon from './../assets/btc.png'
 import UpDown from './../assets/up-down.png'
 
-const BoxCrypto = () => {
+const BoxCrypto = ({name,image,current_price,price_change_24h}) => {
     return (
         <div className="box-crypto">
             <div className="box-crypto-header">
-                <img src={Icon} alt=""/>
-                <p>Bitcoin</p>
+                <img src={image} alt=""/>
+                <p>{name}</p>
             </div>
             <div className="box-crypto-content">
-                <h1>$10,379</h1>
+                <h1>{current_price}</h1>
                 <p>Price</p>
             </div>
             <div className="box-crypto-footer">
                 <img src={UpDown} alt=""/>
-                <p>12%</p>
+                <p>{price_change_24h}</p>
             </div>
         </div>
     )

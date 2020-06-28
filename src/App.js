@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.jsx"
 import BoxCrypto from "./components/BoxCrypto.jsx"
 import TopGainer from "./components/TopGainer.jsx"
 import { useDispatch, useSelector } from 'react-redux';
-import { getMarketCap } from './redux/actions'
+import { getMarketCap, getTop4ByMarketCap } from './redux/actions'
 import { useEffect } from 'react'
 
 
@@ -12,12 +12,14 @@ function App() {
 
   const dispatch = useDispatch()
   const totalMarketCap = useSelector(state => state.crypto.totalMarketCap)
-
+  const top4 = useSelector(state => state.crypto.top4)
 
 
   useEffect(() => {
     dispatch(getMarketCap())
-  })
+    dispatch(getTop4ByMarketCap())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
 
   return (
@@ -25,10 +27,17 @@ function App() {
       <div className="content">
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper-top">
-          <BoxCrypto />
-          <BoxCrypto />
-          <BoxCrypto />
-          <BoxCrypto />
+          {
+            top4.map((item) =>
+              <BoxCrypto
+                key={item.id}
+                name={item.name}
+                image={item.image}
+                current_price={item.current_price}
+                price_change_24h={item.price_change_24h} />
+            )
+          }
+
         </div>
         <div className="sub-title">
           <h1>Top Gainers</h1>
