@@ -1,7 +1,8 @@
-import {GET_GLOBAL_DATA} from './actions'
+import {GET_MARKET_CAP} from './actions'
 
 const initialState = {
   darkTheme: false,
+  totalMarketCap: 0,
   globalData: [],
   topCrypto: [{
     name: '',
@@ -11,12 +12,19 @@ const initialState = {
   }]
 }
 
-// redures
+// reducer
 export function appReducer(state = initialState, action) {
   switch (action.type) {
-    case GET_GLOBAL_DATA:
-      return { ...state, globalData: action.payload }
+    case GET_MARKET_CAP:
+
+      return { ...state, totalMarketCap: formatter.format(action.payload) }
     default:
       return state
   }
 }
+
+const formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 2
+})

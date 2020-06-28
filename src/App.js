@@ -4,22 +4,26 @@ import Navbar from "./components/Navbar.jsx"
 import BoxCrypto from "./components/BoxCrypto.jsx"
 import TopGainer from "./components/TopGainer.jsx"
 import { useDispatch, useSelector } from 'react-redux';
-import { getGlobalData } from './redux/actions'
+import { getMarketCap } from './redux/actions'
 import { useEffect } from 'react'
 
 
 function App() {
 
   const dispatch = useDispatch()
+  const totalMarketCap = useSelector(state => state.crypto.totalMarketCap)
+
+
+
   useEffect(() => {
-    dispatch(getGlobalData())
+    dispatch(getMarketCap())
   })
 
 
   return (
     <div className="App">
       <div className="content">
-        <Navbar />
+        <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper-top">
           <BoxCrypto />
           <BoxCrypto />

@@ -8,7 +8,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const generateStore = () => {
 
     const rootReducer = combineReducers({
-        appReducer
+        crypto: appReducer
       })
 
     return createStore( rootReducer, composeEnhancers( applyMiddleware(thunk) ) )
