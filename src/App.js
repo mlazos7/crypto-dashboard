@@ -44,7 +44,7 @@ function App() {
         </div>
         <div className="wrapper-gainer">
           {
-            coins.sort((a, b) =>
+            coins.slice().sort((a, b) =>
               b.price_change_percentage_24h - a.price_change_percentage_24h
             ).slice(0, 8).map((item) =>
               <TopGainer
