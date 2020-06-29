@@ -23,30 +23,18 @@ body {
 }
 
 .App {
-  /* border: 1px solid black;
-  box-sizing: border-box; */
+  // border: 1px solid black;
+  // box-sizing: border-box;
   height: 100vh;
   max-width: 1440px;
   text-align: center;
   margin: 0 auto;
 }
 
-.content {
+.container {
   display: flex;
   flex-direction: column;
-  padding-left: 165px;
-  padding-right: 165px;
-  margin: 0 auto;
-}
-
-.sub-title h1 {
-  color: $grayColor;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 46px;
-  margin-bottom: 0px;
-  padding: 0;
-  text-align: start;
+  margin: 0 165px;
 }
 
 .navbar {
@@ -73,7 +61,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    .theme {
+    .display-theme {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -95,7 +83,7 @@ body {
   flex-wrap: wrap;
 }
 
-.box-crypto {
+.main-box {
   /* border: 1px solid red; */
   width: 255px;
   min-height: 216px;
@@ -107,7 +95,7 @@ body {
   &:hover {
     background-color: $hoverColor;
   }
-  .box-crypto-header {
+  .box-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,11 +106,11 @@ body {
       font-weight: bold;
     }
     img {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
   }
-  .box-crypto-content {
+  .box-content {
     h1 {
       margin-bottom: 0px;
       color: $blackColor;
@@ -139,7 +127,7 @@ body {
       letter-spacing: 3px;
     }
   }
-  .box-crypto-footer {
+  .box-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +139,17 @@ body {
   }
 }
 
-.box-gainer {
+.sub-title {
+  color: $grayColor;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 46px;
+  margin-bottom: 0px;
+  padding: 0;
+  text-align: start;
+}
+
+.secondary-box {
   /* border: 1px solid red; */
   width: 255px;
   min-height: 125px;
@@ -164,7 +162,7 @@ body {
   &:hover {
     background-color: $hoverColor;
   }
-  .box-gainer-header {
+  .box-header {
     margin-top: 27px;
     padding-left: 24px;
     padding-right: 31px;
@@ -185,8 +183,12 @@ body {
       margin: 0;
       padding: 0;
     }
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
-  .box-gainer-content {
+  .box-footer {
     margin-top: 24px;
     padding-left: 24px;
     padding-right: 31px;
@@ -206,9 +208,5 @@ body {
         font-weight: bold;
       }
     }
-  }
-  .box-gainer-content-img {
-    width: 32px;
-    height: 32px;
   }
 }

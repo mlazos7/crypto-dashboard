@@ -4,12 +4,12 @@ import DownIcon from './../assets/down.png'
 
 const TopGainer = (props) => {
     return (
-        <div className="box-gainer">
-            <div className="box-gainer-header">
+        <div className="secondary-box">
+            <div className="box-header">
                 <p>{props.name}</p>
-                <img className="box-gainer-content-img" src={props.image} alt="" />
+                <img src={props.image} alt="" />
             </div>
-            <div className="box-gainer-content">
+            <div className="box-footer">
                 <h1>{props.current_price.toFixed(3)}</h1>
                 <div>
                     <img src={props.price_change_percentage_24h >= 0 ? UpIcon : DownIcon} alt="" />
