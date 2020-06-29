@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/App.css';
+import './assets/App.scss';
 import Navbar from "./components/Navbar.jsx"
 import BoxCrypto from "./components/BoxCrypto.jsx"
 import TopGainer from "./components/TopGainer.jsx"
@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <div className="content">
         <Navbar totalMarketCap={totalMarketCap} />
-        <div className="wrapper-top">
+        <div className="wrapper">
           {
             coins.slice(0, 4).map((item) =>
               <BoxCrypto
@@ -42,7 +42,7 @@ function App() {
         <div className="sub-title">
           <h1>24h Change</h1>
         </div>
-        <div className="wrapper-gainer">
+        <div className="wrapper">
           {
             coins.slice().sort((a, b) =>
               b.price_change_percentage_24h - a.price_change_percentage_24h
