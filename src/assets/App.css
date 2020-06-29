@@ -82,7 +82,15 @@
   width: 255px;
   min-height: 216px;
   /* border: 1px solid red; */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #F1F3FA;
+  cursor: pointer; 
+}
+
+.box-crypto:hover{
+  background-color: #E1E4F0;
 }
 
 .box-crypto-header{
@@ -153,6 +161,11 @@
   justify-content: space-evenly;
   margin-top: 24px;
   background-color: #f1f3fa;
+  cursor: pointer;
+}
+
+.box-gainer:hover{
+  background-color: #E1E4F0;
 }
 
 .box-gainer-header{
