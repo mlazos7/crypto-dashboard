@@ -1,8 +1,8 @@
-$backgroundColor-ligth: #f7f9ff;
-$primaryColor-ligth: #1d1f29;
-$secondaryColor-ligth: #63687d;
-$boxColor-ligth: #f1f3fa;
-$hoverColor-ligth: #e1e4f0;
+$backgroundColor-light: #f7f9ff;
+$primaryColor-light: #1d1f29;
+$secondaryColor-light: #63687d;
+$boxColor-light: #f1f3fa;
+$hoverColor-light: #e1e4f0;
 
 $backgroundColor-dark: #1d1f29;
 $primaryColor-dark: #ffffff;
@@ -13,20 +13,20 @@ $hoverColor-dark: #333a55;
 $redColor: #dc414c;
 $greenColor: #1eb589;
 
-.background-ligth {
-  background-color: $backgroundColor-ligth;
+.background-light {
+  background-color: $backgroundColor-light;
 }
-.primary-ligth {
-  color: $primaryColor-ligth;
+.primary-light {
+  color: $primaryColor-light;
 }
-.secondary-ligth {
-  color: $secondaryColor-ligth;
+.secondary-light {
+  color: $secondaryColor-light;
 }
 .box-light {
-  background-color: $boxColor-ligth;
+  background-color: $boxColor-light;
 }
 .hover-light:hover {
-  background-color: $hoverColor-ligth;
+  background-color: $hoverColor-light;
 }
 
 .background-dark {
@@ -74,7 +74,6 @@ body {
   padding: 0 165px;
   box-sizing: border-box;
 }
-
 
 .navbar {
   display: flex;
@@ -226,5 +225,14 @@ body {
         font-weight: bold;
       }
     }
+  }
+}
+
+.attribution {
+  margin-top:50px;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
   }
 }
