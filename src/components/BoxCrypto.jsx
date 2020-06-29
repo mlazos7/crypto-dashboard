@@ -15,7 +15,7 @@ const BoxCrypto = (props) => {
             </div>
             <div className="box-crypto-footer">
                 <img src={props.price_change_percentage_24h >= 0 ? UpIcon : DownIcon} alt=""/>
-                <p>{props.price_change_percentage_24h.toFixed(2) + '%'}</p>
+                <p className={props.price_change_percentage_24h >= 0 ? 'green' : 'red'}>{props.price_change_percentage_24h.toFixed(2) + '%'}</p>
             </div>
         </div>
     )
