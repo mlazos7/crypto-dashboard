@@ -1,5 +1,6 @@
 import React from 'react'
-import UpDown from './../assets/up-down.png'
+import UpIcon from './../assets/up.png'
+import DownIcon from './../assets/down.png'
 
 const BoxCrypto = (props) => {
     return (
@@ -9,12 +10,12 @@ const BoxCrypto = (props) => {
                 <p>{props.name}</p>
             </div>
             <div className="box-crypto-content">
-                <h1>{props.current_price}</h1>
-                <p>Price</p>
+                <h1>{props.current_price.toFixed(2)}</h1>
+                <p>$USD</p>
             </div>
             <div className="box-crypto-footer">
-                <img src={UpDown} alt=""/>
-                <p>{props.price_change_percentage_24h}</p>
+                <img src={props.price_change_percentage_24h >= 0 ? UpIcon : DownIcon} alt=""/>
+                <p>{props.price_change_percentage_24h.toFixed(2) + '%'}</p>
             </div>
         </div>
     )

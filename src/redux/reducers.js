@@ -10,7 +10,7 @@ const initialState = {
 export function appReducer(state = initialState, action) {
   switch (action.type) {
     case GET_MARKET_CAP:
-      return { ...state, totalMarketCap: formatter.format(action.payload) }
+      return { ...state, totalMarketCap: action.payload }
     case GET_COINS_BY_MARKET_CAP:
       return { ...state, coins: action.payload }
     default:
@@ -18,8 +18,3 @@ export function appReducer(state = initialState, action) {
   }
 }
 
-const formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2
-})
