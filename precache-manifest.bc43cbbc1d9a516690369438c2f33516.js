@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec02e3b32c27f14383386383f9cdd68d",
+    "revision": "3f6a71fc0bae9468fdbdef36727edf42",
     "url": "/mlazos7/crypto-dashboard/index.html"
   },
   {
-    "revision": "baa6bbb67ab0e733bdb2",
+    "revision": "ec3e0fecbcb3ac746898",
     "url": "/mlazos7/crypto-dashboard/static/css/main.74b45f36.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mlazos7/crypto-dashboard/static/js/2.3ef3cedf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "baa6bbb67ab0e733bdb2",
-    "url": "/mlazos7/crypto-dashboard/static/js/main.59fce8d4.chunk.js"
+    "revision": "ec3e0fecbcb3ac746898",
+    "url": "/mlazos7/crypto-dashboard/static/js/main.532cdbca.chunk.js"
   },
   {
     "revision": "754314147a72006861b9",

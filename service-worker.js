@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mlazos7/crypto-dashboard/precache-manifest.68c43622db77f411f57e19c5ef7f5fca.js"
+  "/mlazos7/crypto-dashboard/precache-manifest.bc43cbbc1d9a516690369438c2f33516.js"
 );
 
 self.addEventListener('message', (event) => {
