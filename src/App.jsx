@@ -11,7 +11,9 @@ function App() {
   const dispatch = useDispatch();
   const totalMarketCap = useSelector((state) => state.crypto.totalMarketCap);
   const coins = useSelector((state) => state.crypto.coins);
-  // const theme = useSelector((state) => state.crypto.theme);
+  const theme = useSelector((state) => state.crypto.theme);
+  const classBackgroundTheme = `background-${theme ? 'dark' : 'light'}`
+  const classThemeSecondary = `secondary-${theme ? 'dark' : 'light'}`
 
   useEffect(() => {
     dispatch(getMarketCap());
@@ -20,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`App`}>
+    <div className={`App ${classBackgroundTheme}`}>
       <div className="container">
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper">
@@ -35,7 +37,7 @@ function App() {
           ))}
         </div>
 
-        <h1 className="sub-title">24h Change</h1>
+        <h1 className={`sub-title ${classThemeSecondary}`}>24h Change</h1>
 
         <div className="wrapper">
           {coins
