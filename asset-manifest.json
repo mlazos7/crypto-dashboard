@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mlazos7/crypto-dashboard/static/css/main.74b45f36.chunk.css",
+    "main.js": "/mlazos7/crypto-dashboard/static/js/main.59fce8d4.chunk.js",
+    "main.js.map": "/mlazos7/crypto-dashboard/static/js/main.59fce8d4.chunk.js.map",
+    "runtime-main.js": "/mlazos7/crypto-dashboard/static/js/runtime-main.70607f7c.js",
+    "runtime-main.js.map": "/mlazos7/crypto-dashboard/static/js/runtime-main.70607f7c.js.map",
+    "static/js/2.3ef3cedf.chunk.js": "/mlazos7/crypto-dashboard/static/js/2.3ef3cedf.chunk.js",
+    "static/js/2.3ef3cedf.chunk.js.map": "/mlazos7/crypto-dashboard/static/js/2.3ef3cedf.chunk.js.map",
+    "index.html": "/mlazos7/crypto-dashboard/index.html",
+    "precache-manifest.68c43622db77f411f57e19c5ef7f5fca.js": "/mlazos7/crypto-dashboard/precache-manifest.68c43622db77f411f57e19c5ef7f5fca.js",
+    "service-worker.js": "/mlazos7/crypto-dashboard/service-worker.js",
+    "static/css/main.74b45f36.chunk.css.map": "/mlazos7/crypto-dashboard/static/css/main.74b45f36.chunk.css.map",
+    "static/js/2.3ef3cedf.chunk.js.LICENSE.txt": "/mlazos7/crypto-dashboard/static/js/2.3ef3cedf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70607f7c.js",
+    "static/js/2.3ef3cedf.chunk.js",
+    "static/css/main.74b45f36.chunk.css",
+    "static/js/main.59fce8d4.chunk.js"
+  ]
+}
