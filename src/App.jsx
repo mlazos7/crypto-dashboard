@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import MainCrypto from "./components/MainCrypto.jsx";
 import SecondaryCrypto from "./components/SecondaryCrypto.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { getMarketCap, getTop4ByMarketCap } from "./redux/actions";
+import { getMarketCap, getCoins } from "./redux/actions";
 import { useEffect } from "react";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getMarketCap());
-    dispatch(getTop4ByMarketCap());
+    dispatch(getCoins());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
