@@ -7,7 +7,7 @@ import { changeTheme } from "../redux/actions";
 
 export default function Navbar(props) {
     const dispatch = useDispatch();
-    const theme = useSelector( (state) => state.crypto.darkTheme)
+    const theme = useSelector( (state) => state.crypto.theme)
 
     const handleClick = (e) => {
         e.preventDefault();

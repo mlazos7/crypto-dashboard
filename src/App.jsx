@@ -11,6 +11,7 @@ function App() {
   const dispatch = useDispatch();
   const totalMarketCap = useSelector((state) => state.crypto.totalMarketCap);
   const coins = useSelector((state) => state.crypto.coins);
+  // const theme = useSelector((state) => state.crypto.theme);
 
   useEffect(() => {
     dispatch(getMarketCap());
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={`App`}>
       <div className="container">
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper">

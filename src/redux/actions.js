@@ -50,12 +50,11 @@ export const getCoins = () => async (dispatch) => {
 
 export const changeTheme = (dispatch, getState) => {
 
-    const {darkTheme}  = getState().crypto;
-    console.log('theme:' + darkTheme)
+    const {theme}  = getState().crypto;
 
     dispatch({
         type: CHANGE_THEME,
-        value: !darkTheme
+        value: !theme
     })
 }
 

@@ -1,11 +1,49 @@
-$primaryColor: #f7f9ff;
-$grayColor: #63687d;
+$backgroundColor-ligth: #f7f9ff;
+$primaryColor-ligth: #1d1f29;
+$secondaryColor-ligth: #63687d;
+$boxColor-ligth: #f1f3fa;
+$hoverColor-ligth: #e1e4f0;
+
+$backgroundColor-dark: #1d1f29;
+$primaryColor-dark: #ffffff;
+$secondaryColor-dark: #8c98c6;
+$boxColor-dark: #252b42;
+$hoverColor-dark: #333a55;
+
 $redColor: #dc414c;
 $greenColor: #1eb589;
-$blackColor: #1d1f29;
-$hoverColor: #e1e4f0;
-$boxBgColor: #f1f3fa;
-$themeTextColor: #848bab;
+
+.background-ligth {
+  background-color: $backgroundColor-ligth;
+}
+.primary-ligth {
+  color: $primaryColor-ligth;
+}
+.secondary-ligth {
+  color: $secondaryColor-ligth;
+}
+.box-light {
+  background-color: $boxColor-ligth;
+}
+.hover-light {
+  background-color: $hoverColor-ligth;
+}
+
+.background-dark {
+  background-color: $backgroundColor-dark;
+}
+.primary-dark {
+  color: $primaryColor-dark;
+}
+.secondary-dark {
+  color: $secondaryColor-dark;
+}
+.box-dark {
+  background-color: $boxColor-dark;
+}
+.hover-dark {
+  background-color: $hoverColor-dark;
+}
 
 .red {
   color: $redColor;
@@ -19,23 +57,24 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: $primaryColor;
 }
 
 .App {
-  // border: 1px solid black;
-  // box-sizing: border-box;
+  width: 100vw;
   height: 100vh;
-  max-width: 1440px;
   text-align: center;
   margin: 0 auto;
 }
 
 .container {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  margin: 0 165px;
+  margin: 0 auto;
+  padding: 0 165px;
+  box-sizing: border-box;
 }
+
 
 .navbar {
   display: flex;
@@ -47,11 +86,11 @@ body {
     p {
       text-align: start;
       font-size: 14px;
-      color: $grayColor;
+      color: $secondaryColor-ligth;
       font-weight: bold;
     }
     h1 {
-      color: $blackColor;
+      color: $primaryColor-ligth;
       font-size: 28px;
       font-weight: bold;
       margin: 0;
@@ -68,7 +107,7 @@ body {
       p {
         margin-right: 20px;
         font-size: 14px;
-        color: $themeTextColor;
+        color: $secondaryColor-ligth;
         font-weight: bold;
       }
     }
@@ -90,10 +129,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $boxBgColor;
+  background-color: $boxColor-ligth;
   cursor: pointer;
   &:hover {
-    background-color: $hoverColor;
+    background-color: $hoverColor-ligth;
   }
   .box-header {
     display: flex;
@@ -102,7 +141,7 @@ body {
     p {
       margin-left: 10px;
       font-size: 14px;
-      color: $grayColor;
+      color: $secondaryColor-ligth;
       font-weight: bold;
     }
     img {
@@ -113,7 +152,7 @@ body {
   .box-content {
     h1 {
       margin-bottom: 0px;
-      color: $blackColor;
+      color: $primaryColor-ligth;
       line-height: 48px;
       font-size: 46px;
       margin-bottom: 0px;
@@ -122,7 +161,7 @@ body {
     p {
       margin-top: 9px;
       font-size: 12px;
-      color: $grayColor;
+      color: $secondaryColor-ligth;
       font-style: italic;
       letter-spacing: 3px;
     }
@@ -140,7 +179,7 @@ body {
 }
 
 .sub-title {
-  color: $grayColor;
+  color: $secondaryColor-ligth;
   font-size: 24px;
   font-weight: bold;
   margin-top: 46px;
@@ -157,10 +196,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 24px;
-  background-color: $boxBgColor;
+  background-color: $boxColor-ligth;
   cursor: pointer;
   &:hover {
-    background-color: $hoverColor;
+    background-color: $hoverColor-ligth;
   }
   .box-header {
     margin-top: 27px;
@@ -171,12 +210,12 @@ body {
     justify-content: space-between;
     align-items: center;
     h1 {
-      color: $blackColor;
+      color: $primaryColor-ligth;
       font-size: 32px;
       margin-top: 23px;
     }
     p {
-      color: $grayColor;
+      color: $secondaryColor-ligth;
       font-size: 14px;
       font-weight: bold;
       text-align: left;
