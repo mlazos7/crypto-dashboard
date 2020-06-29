@@ -6,14 +6,14 @@ import SecondaryCrypto from "./components/SecondaryCrypto.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { getMarketCap, getCoins } from "./redux/actions";
 import { useEffect } from "react";
+import {classThemeBackground, classThemeSecondary } from "./Theme"
 
 function App() {
   const dispatch = useDispatch();
   const totalMarketCap = useSelector((state) => state.crypto.totalMarketCap);
   const coins = useSelector((state) => state.crypto.coins);
   const theme = useSelector((state) => state.crypto.theme);
-  const classBackgroundTheme = `background-${theme ? 'dark' : 'light'}`
-  const classThemeSecondary = `secondary-${theme ? 'dark' : 'light'}`
+
 
   useEffect(() => {
     dispatch(getMarketCap());
@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`App ${classBackgroundTheme}`}>
+    <div className={`App ${classThemeBackground(theme)}`}>
       <div className="container">
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper">
@@ -37,7 +37,7 @@ function App() {
           ))}
         </div>
 
-        <h1 className={`sub-title ${classThemeSecondary}`}>24h Change</h1>
+        <h1 className={`sub-title ${classThemeSecondary(theme)}`}>24h Change</h1>
 
         <div className="wrapper">
           {coins
