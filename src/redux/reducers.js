@@ -1,7 +1,7 @@
 import { GET_MARKET_CAP, GET_COINS_BY_MARKET_CAP, CHANGE_THEME } from './actions'
 
 const initialState = {
-  theme: false,
+  theme: localStorage.getItem('theme') == "dark" ? true : false,
   totalMarketCap: 0,
   coins: [],
 }

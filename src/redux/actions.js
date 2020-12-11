@@ -51,6 +51,7 @@ export const getCoins = () => async (dispatch) => {
 export const changeTheme = (dispatch, getState) => {
 
     const {theme}  = getState().crypto;
+    localStorage.setItem('theme', theme ? "ligth" : "dark");
 
     dispatch({
         type: CHANGE_THEME,
