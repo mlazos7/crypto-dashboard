@@ -57,11 +57,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 .App {
   width: 100vw;
-  height: 100vh;
   text-align: center;
   margin: 0 auto;
 }
@@ -71,15 +71,14 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 165px;
-  box-sizing: border-box;
+  padding: 0 10%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  min-height: 136px;
-  padding-top: 46px;
+  min-height: 106px;
+  padding-top: 3rem;
   flex-wrap: wrap;
   .navbar-title {
     p {
@@ -119,12 +118,13 @@ body {
 }
 
 .main-box {
-  /* border: 1px solid red; */
-  width: 255px;
+  // border: 1px solid red; 
+  min-width: 255px;
   min-height: 216px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 24px;
   cursor: pointer;
   .box-header {
     display: flex;
@@ -143,8 +143,8 @@ body {
   .box-content {
     h1 {
       margin-bottom: 0px;
-      line-height: 48px;
-      font-size: 46px;
+      line-height: 42px;
+      font-size: 42px;
       margin-bottom: 0px;
       margin-top: 20px;
     }
@@ -229,8 +229,7 @@ body {
 }
 
 .attribution {
-  margin-top:50px;
-  // font-size: 11px;
+  padding: 2rem 0 1rem 0;
   text-align: center;
   a {
     color: hsl(228, 45%, 44%);
