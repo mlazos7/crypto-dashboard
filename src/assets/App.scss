@@ -13,6 +13,8 @@ $hoverColor-dark: #333a55;
 $redColor: #dc414c;
 $greenColor: #1eb589;
 
+$atributtionColor: hsl(228, 45%, 44%);
+
 .background-light {
   background-color: $backgroundColor-light;
 }
@@ -28,7 +30,6 @@ $greenColor: #1eb589;
 .hover-light:hover {
   background-color: $hoverColor-light;
 }
-
 .background-dark {
   background-color: $backgroundColor-dark;
 }
@@ -44,11 +45,9 @@ $greenColor: #1eb589;
 .hover-dark:hover {
   background-color: $hoverColor-dark;
 }
-
 .red {
   color: $redColor;
 }
-
 .green {
   color: $greenColor;
 }
@@ -62,15 +61,13 @@ body {
 
 .App {
   width: 100vw;
-  text-align: center;
-  margin: 0 auto;
+  // text-align: center;
 }
 
 .container {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   padding: 0 10%;
 }
 
@@ -93,9 +90,6 @@ body {
     }
   }
   .navbar-theme {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     .display-theme {
       display: flex;
       align-items: center;
@@ -115,16 +109,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .main-box {
-  // border: 1px solid red; 
-  min-width: 255px;
+  min-width: 256px;
   min-height: 216px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 24px;
   cursor: pointer;
   .box-header {
     display: flex;
@@ -141,6 +134,7 @@ body {
     }
   }
   .box-content {
+    text-align: center;
     h1 {
       margin-bottom: 0px;
       line-height: 42px;
@@ -170,23 +164,21 @@ body {
 .sub-title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 46px;
-  margin-bottom: 0px;
+  margin-top: 44px;
+  margin-bottom: 22px;
   padding: 0;
   text-align: start;
 }
 
 .secondary-box {
-  /* border: 1px solid red; */
   width: 255px;
   min-height: 125px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 24px;
   cursor: pointer;
   .box-header {
-    margin-top: 27px;
+    padding-top: 27px;
     padding-left: 24px;
     padding-right: 31px;
     display: flex;
@@ -232,6 +224,6 @@ body {
   padding: 2rem 0 1rem 0;
   text-align: center;
   a {
-    color: hsl(228, 45%, 44%);
+    color: $atributtionColor;
   }
 }
