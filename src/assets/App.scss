@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 $backgroundColor-light: #f7f9ff;
 $primaryColor-light: #1d1f29;
 $secondaryColor-light: #63687d;
@@ -53,35 +59,34 @@ $atributtionColor: hsl(228, 45%, 44%);
 }
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
 .App {
-  width: 100vw;
-  // text-align: center;
+  width: 100%;
 }
 
 .container {
-  max-width: 1440px;
+  width: 75vw;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
+  margin: 0 auto;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   min-height: 106px;
-  padding-top: 3rem;
+  padding: 3rem 0 2rem 0;
   flex-wrap: wrap;
-  .navbar-title {
+
+  &-title {
     p {
       text-align: start;
       font-size: 14px;
       font-weight: bold;
+      padding-top: 1rem;
     }
     h1 {
       font-size: 28px;
@@ -89,7 +94,9 @@ body {
       margin: 0;
     }
   }
-  .navbar-theme {
+
+  &-theme {
+    padding: 1rem 0;
     .display-theme {
       display: flex;
       align-items: center;
@@ -104,20 +111,20 @@ body {
 }
 
 .wrapper {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .main-box {
-  min-width: 256px;
+  min-width: 255px;
   min-height: 216px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   cursor: pointer;
   .box-header {
     display: flex;
@@ -138,7 +145,7 @@ body {
     h1 {
       margin-bottom: 0px;
       line-height: 42px;
-      font-size: 42px;
+      font-size: 2rem;
       margin-bottom: 0px;
       margin-top: 20px;
     }
@@ -205,8 +212,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 19px;
+
     h1 {
       margin: 0;
+      font-size: 1.7rem;
     }
     div {
       display: flex;
@@ -221,7 +230,8 @@ body {
 }
 
 .attribution {
-  padding: 2rem 0 1rem 0;
+  padding: 3rem 0 2rem 0;
+  margin: 0 auto;
   text-align: center;
   a {
     color: $atributtionColor;

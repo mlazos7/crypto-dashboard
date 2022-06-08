@@ -17,11 +17,14 @@ function App() {
   useEffect(() => {
     dispatch(getMarketCap());
     dispatch(getCoins());
+
+    document.body.className = '';
+    document.body.classList.add(classTheme.Background(theme));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [theme]);
 
   return (
-    <div className={`App ${classTheme.Background(theme)}`}>
+    <div className={`App`}>
       <div className="container">
         <Navbar totalMarketCap={totalMarketCap} />
         <div className="wrapper">
