@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/crypto-dashboard/static/css/main.5cf7b9cc.chunk.css",
-    "main.js": "/crypto-dashboard/static/js/main.d400c19c.chunk.js",
-    "main.js.map": "/crypto-dashboard/static/js/main.d400c19c.chunk.js.map",
+    "main.css": "/crypto-dashboard/static/css/main.90a147f8.chunk.css",
+    "main.js": "/crypto-dashboard/static/js/main.4ffa066e.chunk.js",
+    "main.js.map": "/crypto-dashboard/static/js/main.4ffa066e.chunk.js.map",
     "runtime-main.js": "/crypto-dashboard/static/js/runtime-main.cdfcd50f.js",
     "runtime-main.js.map": "/crypto-dashboard/static/js/runtime-main.cdfcd50f.js.map",
     "static/js/2.e3ecd73e.chunk.js": "/crypto-dashboard/static/js/2.e3ecd73e.chunk.js",
     "static/js/2.e3ecd73e.chunk.js.map": "/crypto-dashboard/static/js/2.e3ecd73e.chunk.js.map",
     "index.html": "/crypto-dashboard/index.html",
-    "precache-manifest.0afd648a5b70cf3195223a2a1d427d7b.js": "/crypto-dashboard/precache-manifest.0afd648a5b70cf3195223a2a1d427d7b.js",
+    "precache-manifest.5311de5a691df07fa0f56c927ca0f102.js": "/crypto-dashboard/precache-manifest.5311de5a691df07fa0f56c927ca0f102.js",
     "service-worker.js": "/crypto-dashboard/service-worker.js",
-    "static/css/main.5cf7b9cc.chunk.css.map": "/crypto-dashboard/static/css/main.5cf7b9cc.chunk.css.map",
+    "static/css/main.90a147f8.chunk.css.map": "/crypto-dashboard/static/css/main.90a147f8.chunk.css.map",
     "static/js/2.e3ecd73e.chunk.js.LICENSE.txt": "/crypto-dashboard/static/js/2.e3ecd73e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cdfcd50f.js",
     "static/js/2.e3ecd73e.chunk.js",
-    "static/css/main.5cf7b9cc.chunk.css",
-    "static/js/main.d400c19c.chunk.js"
+    "static/css/main.90a147f8.chunk.css",
+    "static/js/main.4ffa066e.chunk.js"
   ]
 }
